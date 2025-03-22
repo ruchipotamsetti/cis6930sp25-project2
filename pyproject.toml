@@ -1,0 +1,9 @@
+[project]
+name = "cis6930sp25-project2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf>=1.25.4",
+]
