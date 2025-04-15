@@ -6,7 +6,7 @@
 
 ## **Assignment Description**
 
-This projects redacts senstive information from the provided pdfs. There are various ways this can be done using this script. Using --names we can provide specific names that we want to get redacted. Similarly using --entities will redact all the PERSON entities in the pdf. Using --coref will redact all the coreferences in the pdf. The text from the pdf is extracted and edited using Pymupdf and spacy is used for entity resolution.
+This projects redacts senstive information from the provided pdfs. There are various ways this can be done using this script. Using --names we can provide specific names that we want to redact. Similarly using --entities will redact all the PERSON entities in the pdf. Using --coref will redact all the coreferences in the pdf. The text from the pdf is extracted and edited using Pymupdf and spacy is used for entity resolution.
 
 ---
 
@@ -29,15 +29,22 @@ cis6930sp25-project1/
 ---
 
 ## **To Install**
-To install the necessary dependencies using `uv`, run:
+This will create a virtual environment:
 ```sh
 uv venv
 ```
-This will create a virtual environment.
+To activate the virtual environment run:
+```sh
+.venv\Scripts\activate
+```
+To install the necessary dependencies using `uv`, run:
 ```sh
 uv pip install .
 ```
-This will install all the required libraries using pyproject.toml
+To deactivate the virtual environment run:
+```sh
+deactivate
+```
 
 ---
 
@@ -80,7 +87,7 @@ uv run pytest
 
 ## **Features and Functions**
 
-### **`pdf_redactor.py`**
+### **`main.py`**
 - **`extract_pdf_text(file_path)`**  
   - Extracts text content from a PDF file page-by-page.
   - Parameters:
