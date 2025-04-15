@@ -66,13 +66,13 @@ uv run python main.py --input "data/*.pdf" --output myoutput/ --names "Bonilla" 
 
 ## **Example Output**
 ```sh
-uv run python main.py --input "data\ufo-sightings.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
+uv run python main.py --input "resources\test1.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
 
-ufo-sightings.pdf       76x123  Tulli Papyrus   13      PERSON
-ufo-sightings.pdf       472x136 Tulli Papyrus   13      PERSON
-ufo-sightings.pdf       78x364  Bonilla 7       PERSON
-ufo-sightings.pdf       422x352 Bonilla 7       PERSON
-ufo-sightings.pdf       367x374 Bonilla 7       PERSON
+test1.pdf       76x123  Tulli Papyrus   13      Name
+test1.pdf       472x136 Tulli Papyrus   13      Name
+test1.pdf       78x364  Bonilla 7       Name
+test1.pdf       422x352 Bonilla 7       Name
+test1.pdf       367x374 Bonilla 7       Name
 
 ```
 
