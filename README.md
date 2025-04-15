@@ -23,15 +23,15 @@ cis6930sp25-project1/
 └── resources/                    # files to be redacted
     ├── test1.py     
     └── test2.py
-└── output/                    # files after redaction
+└── output/                       # files after redaction
     ├── test1.py     
     └── test2.py
-└── stats/                       # stats generated     
+└── stats/                        # stats generated     
     └── stats1.py 
 └── tests/                        # Directory containing all test files.
-    ├── test_entity_detection.py     # Tests for verifying entity recognition logic and name matching.
-    ├── test_redaction.py     # Tests for PDF text extraction and redaction functionality.
-    └── test_stats_output.py    # Tests for validating stats file format and output completeness.
+    ├── test_entity_detection.py  # Tests for verifying entity recognition logic and name matching.
+    ├── test_redaction.py         # Tests for PDF text extraction and redaction functionality.
+    └── test_stats_output.py      # Tests for validating stats file format and output completeness.
 ```
 
 ---
