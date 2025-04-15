@@ -87,7 +87,7 @@ uv run pytest
 ---
 
 ### **Demo**
-![]()
+![https://github.com/ruchipotamsetti/cis6930sp25-project2/blob/main/demo.gif]()
 
 ---
 
