@@ -20,6 +20,14 @@ cis6930sp25-project1/
 ├── main.py                       # Main Python script that contains the core functionality of the project.
 ├── pyproject.toml                # Configuration file for the project, used by pipenv.
 ├── Project1_demo.gif             # Demo video
+└── resources/                    # files to be redacted
+    ├── test1.py     
+    └── test2.py
+└── output/                    # files after redaction
+    ├── test1.py     
+    └── test2.py
+└── stats/                       # stats generated     
+    └── stats1.py 
 └── tests/                        # Directory containing all test files.
     ├── test_entity_detection.py     # Tests for verifying entity recognition logic and name matching.
     ├── test_redaction.py     # Tests for PDF text extraction and redaction functionality.
