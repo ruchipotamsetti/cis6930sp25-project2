@@ -8,6 +8,12 @@ import warnings
 
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
+LABEL_TO_TYPE = {
+    "PERSON": "Name",
+    "GPE": "Location",
+    "ORG": "Organization",
+    "COREF": "Coreference",
+}
 
 def extract_pdf_text(file_path):
     doc = fitz.open(file_path)
@@ -59,7 +65,8 @@ def redact_entities_in_pdf(doc, entities_by_page, pdf_filename, stats_file_handl
                     already_redacted.add(loc_key)
                     page.add_redact_annot(inst, fill=(0, 0, 0))
                     location = f"{int(inst.x0)}x{int(inst.y0)}"
-                    stats_entries.append(f"{pdf_filename}\t{location}\t{ent_text}\t{len(ent_text)}\t{label}")
+                    type_desc = LABEL_TO_TYPE.get(label, label)  # fallback to label if not mapped
+                    stats_entries.append(f"{pdf_filename}\t{location}\t{ent_text}\t{len(ent_text)}\t{type_desc}")
 
         page.apply_redactions()
 
