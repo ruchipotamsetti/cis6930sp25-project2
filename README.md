@@ -42,16 +42,21 @@ This will create a virtual environment:
 uv venv
 ```
 To activate the virtual environment run:
+Windows:
 ```sh
 .venv\Scripts\activate
 ```
+Mac:
+```sh
+source .venv/bin/activate
+```
 To install the necessary dependencies using `uv`, run:
 ```sh
-uv run -m spacy download en_core_web_sm
+uv pip install .
 ```
 Install the model:
 ```sh
-uv pip install .
+uv run -m spacy download en_core_web_sm
 ```
 To deactivate the virtual environment run:
 ```sh
