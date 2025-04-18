@@ -47,6 +47,10 @@ To activate the virtual environment run:
 ```
 To install the necessary dependencies using `uv`, run:
 ```sh
+uv run -m spacy download en_core_web_sm
+```
+Install the model:
+```sh
 uv pip install .
 ```
 To deactivate the virtual environment run:
@@ -59,14 +63,14 @@ deactivate
 ## **To Run**
 Execute the program using:
 ```sh
-uv run python main.py --input "data/*.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus" --entities --coref
+uv run python main.py --input "resources/*.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus" --entities --coref
 ```
 
 ---
 
 ## **Example Output**
 ```sh
-uv run python main.py --input "resources\test1.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
+uv run python main.py --input "resources/test1.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
 
 test1.pdf       76x123  Tulli Papyrus   13      Name
 test1.pdf       472x136 Tulli Papyrus   13      Name
