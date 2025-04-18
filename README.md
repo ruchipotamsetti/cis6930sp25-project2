@@ -42,17 +42,18 @@ This will create a virtual environment:
 uv venv
 ```
 To activate the virtual environment run:
-Windows:
+- Windows:
 ```sh
 .venv\Scripts\activate
 ```
-Mac:
+- Mac:
 ```sh
 source .venv/bin/activate
 ```
 To install the necessary dependencies using `uv`, run:
 ```sh
 uv pip install .
+uv add pytest
 ```
 Install the model:
 ```sh
