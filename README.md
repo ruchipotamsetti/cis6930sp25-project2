@@ -42,12 +42,21 @@ This will create a virtual environment:
 uv venv
 ```
 To activate the virtual environment run:
+Windows:
 ```sh
 .venv\Scripts\activate
+```
+Mac:
+```sh
+source .venv/bin/activate
 ```
 To install the necessary dependencies using `uv`, run:
 ```sh
 uv pip install .
+```
+Install the model:
+```sh
+uv run -m spacy download en_core_web_sm
 ```
 To deactivate the virtual environment run:
 ```sh
@@ -59,14 +68,18 @@ deactivate
 ## **To Run**
 Execute the program using:
 ```sh
-uv run python main.py --input "data/*.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus" --entities --coref
+uv run python main.py --input "resources/*.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus" --entities --coref
 ```
-
+Or
+For help run:
+```
+uv run python main.py -h
+```
 ---
 
 ## **Example Output**
 ```sh
-uv run python main.py --input "resources\test1.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
+uv run python main.py --input "resources/test1.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus"
 
 test1.pdf       76x123  Tulli Papyrus   13      Name
 test1.pdf       472x136 Tulli Papyrus   13      Name
