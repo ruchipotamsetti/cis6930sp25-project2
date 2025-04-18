@@ -70,7 +70,11 @@ Execute the program using:
 ```sh
 uv run python main.py --input "resources/*.pdf" --output myoutput/ --names "Bonilla" --names "Tulli Papyrus" --entities --coref
 ```
-
+Or
+For help run:
+```
+uv run python main.py -h
+```
 ---
 
 ## **Example Output**
