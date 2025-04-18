@@ -4,7 +4,7 @@ import main
 
 def test_stats_file_output():
     with tempfile.TemporaryDirectory() as tmpdir:
-        input_pdf = "data/ufo-sightings.pdf"
+        input_pdf = "resources/test1.pdf"
         output_dir = os.path.join(tmpdir, "out")
         stats_file = os.path.join(tmpdir, "stats.txt")
 
